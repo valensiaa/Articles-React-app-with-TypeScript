@@ -16,7 +16,6 @@ const ArticleInfoContainer = () => {
     handleToggle();
     Article.getArticle(articleId)
       .then((response) => {
-        console.log(response.data);
         setArticle(response.data);
         setLoading(false);
       })
